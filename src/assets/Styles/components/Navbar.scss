@@ -1,0 +1,25 @@
+.logo {
+  width: 15%;
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 3% auto;
+}
+
+.navbar-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  a {
+    padding-bottom: 10px;
+    border-bottom: solid 3px transparent;
+    transition: border-bottom 0.3s ease;
+  }
+
+  a:hover {
+    border-bottom: solid 3px $primary-color;
+  }
+}
