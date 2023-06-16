@@ -3,7 +3,7 @@
 @import 'mixins';
 
 
-li, h1, h2, h3, h4, p {
+li, h1, h2, h3, h4, p, a {
   color: $primary-color;
 }
 
@@ -12,4 +12,12 @@ body {
   font-family: $main-font;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
