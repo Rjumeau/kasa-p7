@@ -1,8 +1,12 @@
 import Banner from '../../components/Banner';
+import Card from '../../components/Card';
 
 function Home() {
   return (
-    <Banner/>
+    <div>
+      <Banner/>
+      <Card/>
+    </div>
   )
 }
 
