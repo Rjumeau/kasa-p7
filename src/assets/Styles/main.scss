@@ -1,0 +1,15 @@
+@import './variables/colors';
+@import './variables/fonts';
+@import 'mixins';
+
+
+li, h1, h2, h3, h4, p {
+  color: $primary-color;
+}
+
+body {
+  margin: 0 7%;
+  font-family: $main-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
