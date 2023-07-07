@@ -1,0 +1,29 @@
+.card-container {
+  margin-top: 3%;
+  padding: 3%;
+  background-color: $secondary-color;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.7em;
+  overflow: hidden;
+}
+
+.card {
+  width: 95%;
+  height: 350px;
+  padding: 2%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-text {
+  color: white;
+  background-color: $primary-color;
+  padding: 3%;
+  border-radius: 5px;
+}

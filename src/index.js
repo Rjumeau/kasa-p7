@@ -9,17 +9,21 @@ import About from './pages/About'
 
 import Error from './components/Error'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 ReactDOM.render(
     <React.StrictMode>
         <Router>
-          < Navbar />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/accomodation/:accomodationNumber" element={<Accomodation />} />
-                <Route path="/about" element={<About />} />
-                <Route path="*" element={<Error />} />
-            </Routes>
+          < div class="container">
+            < Navbar />
+              <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/accomodation/:accomodationNumber" element={<Accomodation />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="*" element={<Error />} />
+              </Routes>
+          </div>
+          < Footer />
         </Router>
     </React.StrictMode>,
 document.getElementById('root')

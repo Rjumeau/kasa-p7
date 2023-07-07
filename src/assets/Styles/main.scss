@@ -2,7 +2,8 @@
 @import './variables/fonts';
 @import './components/Navbar.scss';
 @import './components/Banner.scss';
-@import './components/Card.scss';
+@import './components/AccomodationsList.scss';
+@import './components/Footer.scss';
 @import 'mixins';
 
 
@@ -11,7 +12,7 @@ li, h1, h2, h3, h4, p, a {
 }
 
 body {
-  margin: 0 7%;
+  margin: 0;
   font-family: $main-font;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -23,4 +24,8 @@ li {
 
 a {
   text-decoration: none;
+}
+
+.container {
+  margin: 0 7%;
 }

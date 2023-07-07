@@ -1,11 +1,14 @@
 import Banner from '../../components/Banner';
-import Card from '../../components/Card';
+import AccomodationsList from '../../components/AccomodationsList';
+import { useState } from 'react';
+import accomodations from '../../data/accomodations.json'
 
 function Home() {
+  const [ accomodationsData, setAccomodations ] = useState(accomodations)
   return (
     <div>
       <Banner/>
-      <Card/>
+      <AccomodationsList accomodations={accomodationsData}/>
     </div>
   )
 }
