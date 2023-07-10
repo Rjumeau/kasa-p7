@@ -8,9 +8,9 @@ function AccomodationsList({ accomodations }) {
           <div
             key={index}
             style={{ backgroundImage: `url(${accomodation.cover})`}}
-            class="card"
+            className="card"
           >
-          <p class="card-text">{accomodation.title}</p>
+          <p className="card-text">{accomodation.title}</p>
           </div>
         </Link>
       ))}

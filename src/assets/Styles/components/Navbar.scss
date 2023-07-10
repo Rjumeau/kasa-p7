@@ -1,16 +1,18 @@
 .logo {
-  width: 15%;
+  width: 80%;
 }
 
 .navbar-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 3% auto;
 }
 
 .navbar-list {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 40px;
 
   a {
@@ -21,5 +23,20 @@
 
   a:hover {
     border-bottom: solid 3px $primary-color;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .logo {
+    width: 80%;
+  }
+
+  .navbar-wrapper a:first-of-type {
+    width: 40%;
+  }
+
+  .navbar-list {
+    gap: 20px;
   }
 }

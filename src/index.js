@@ -14,10 +14,11 @@ import Footer from './components/Footer'
 ReactDOM.render(
     <React.StrictMode>
         <Router>
-          < div class="container">
+          < div className="container">
             < Navbar />
               <Routes>
                   <Route path="/" element={<Home />} />
+                  <Route path="/home" element={<Home />} />
                   <Route path="/accomodation/:accomodationNumber" element={<Accomodation />} />
                   <Route path="/about" element={<About />} />
                   <Route path="*" element={<Error />} />
