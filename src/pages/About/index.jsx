@@ -1,6 +1,12 @@
+import Banner from '../../components/Banner';
+import Collapsible from '../../components/Collapsible';
+import aboutBannerImage from '../../assets/Images/about-banner.svg';
+
 function About() {
   return (
-    <h1>To do</h1>
+    <Banner
+      backgroundImage={aboutBannerImage}
+    />
   )
 }
 
