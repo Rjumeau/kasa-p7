@@ -3,6 +3,9 @@ li, h1, h2, h3, h4, p, a {
 }
 
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   font-family: $main-font;
   -webkit-font-smoothing: antialiased;
@@ -15,6 +18,21 @@ li {
 
 a {
   text-decoration: none;
+}
+
+footer {
+  width: 100%;
+  margin-top: 1.5em;
+  height: 200px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    color: white;
+  }
 }
 
 .container {
