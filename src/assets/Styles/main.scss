@@ -1,37 +1,4 @@
 @import './variables/colors';
 @import './variables/fonts';
-@import './components/Navbar.scss';
-@import './components/Banner.scss';
-@import './components/AccomodationsList.scss';
-@import './components/Footer.scss';
 @import 'mixins';
-
-
-li, h1, h2, h3, h4, p, a {
-  color: $primary-color;
-}
-
-body {
-  margin: 0;
-  font-family: $main-font;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-.container {
-  margin: 0 7%;
-}
-
-@media (max-width: 600px) {
-  .container {
-    margin: 0 4%;
-  }
-}
+@import 'layout';

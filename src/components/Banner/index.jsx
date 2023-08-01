@@ -1,3 +1,5 @@
+import './Banner.scss'
+
 function Banner({title, backgroundImage}) {
   const backgroundStyle = {
     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${backgroundImage})`

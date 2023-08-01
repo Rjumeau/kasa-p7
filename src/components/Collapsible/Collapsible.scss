@@ -1,0 +1,35 @@
+@import '../../assets/Styles/variables/colors';
+
+.collapsible-container {
+  margin: 1em 4em;
+}
+
+
+.collapsible-wrapper {
+  cursor: pointer;
+  background-color: $primary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 0 1em;
+
+  p {
+    margin: 0.3em !important;
+    color: white;
+  }
+}
+
+.collapsible-content {
+  background-color: $secondary-color;
+  padding: 1em;
+
+  p {
+    margin: 0 !important;
+  }
+}
+
+.svg-inline--fa {
+  color: white
+}
