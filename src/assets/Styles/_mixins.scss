@@ -1,0 +1,11 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin border-transition {
+  padding-bottom: 10px;
+  border-bottom: solid 3px transparent;
+  transition: border-bottom 0.3s ease;
+}

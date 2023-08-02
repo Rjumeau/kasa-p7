@@ -3,7 +3,7 @@ li, h1, h2, h3, h4, p, a {
 }
 
 body {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -21,9 +21,10 @@ a {
 }
 
 footer {
+  flex-grow: 0;
   width: 100%;
   margin-top: 1.5em;
-  height: 200px;
+  padding: 2.5rem 0;
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -36,6 +37,9 @@ footer {
 }
 
 .container {
+  position: relative;
+  padding-bottom: 2.5rem;
+  min-height: 100vh;
   margin: 0 7%;
 }
 
