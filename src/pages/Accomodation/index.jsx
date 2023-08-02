@@ -1,6 +1,11 @@
+import Banner from '../../components/Banner'
+import AccomodationPicture from '../../assets/Images/accomodation-banner.svg'
+
 function Accomodation() {
   return (
-    <h1> Accomodation To do</h1>
+    <Banner
+      backgroundImage={AccomodationPicture}
+    />
   )
 }
 

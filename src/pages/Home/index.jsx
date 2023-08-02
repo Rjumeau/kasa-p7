@@ -11,6 +11,7 @@ function Home() {
       <Banner
         title="Chez vous et partout ailleurs"
         backgroundImage={homeBannerImage}
+        height={{height: '22vh'}}
       />
       <AccomodationsList accomodations={accomodationsData}/>
     </div>
