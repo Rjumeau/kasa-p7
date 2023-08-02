@@ -1,0 +1,64 @@
+@import '../../assets/Styles/variables/colors';
+
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-items {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex-shrink: 0;
+  width: 100%;
+  overflow: hidden;
+  background-position: center;
+  background-size: center;
+  background-repeat: no-repeat;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  border: none;
+  font-size: 3rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.carousel-control.prev {
+  left: 1rem;
+}
+
+.carousel-control.next {
+  right: 1rem;
+}
+
+.carousel-bullets {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.bullet {
+  width: 2vh;
+  height: 2vh;
+  margin: 0 0.3rem;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+
+.bullet.active {
+  background-color: $primary-color !important
+}

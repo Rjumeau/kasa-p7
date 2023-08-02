@@ -4,10 +4,9 @@ import './AccomodationsList.scss'
 function AccomodationsList({ accomodations }) {
   return (
     <div className="card-container">
-      { accomodations.map((accomodation, index) => (
-        <Link to={`accomodation/${accomodation.id}`}>
+      { accomodations.map((accomodation) => (
+        <Link key={accomodation.id} to={`accomodations/${accomodation.id}`}>
           <div
-            key={index}
             style={{ backgroundImage: `url(${accomodation.cover})`}}
             className="card"
           >
