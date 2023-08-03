@@ -14,13 +14,19 @@
   font-weight: 500;
 }
 
+.banner.about-mobile {
+  height: 30vh;
+}
 
-@media (max-width: 600px) {
+
+@media screen and (max-width: 768px) {
   .banner {
-    height: 130px;
+    height: 13vh;
+    justify-content: flex-start;
   }
 
   .banner-title {
-    font-size: 1.3em;
+    margin-left: 1em;
+    font-size: 1.5em;
   }
 }

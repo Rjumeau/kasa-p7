@@ -31,5 +31,12 @@
 }
 
 .svg-inline--fa {
-  color: white
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .collapsible-container {
+    margin: 1em 0;
+  }
 }

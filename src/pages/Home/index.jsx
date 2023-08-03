@@ -9,7 +9,7 @@ function Home() {
   return (
     <div>
       <Banner
-        title="Chez vous et partout ailleurs"
+        title="Chez vous, partout et ailleurs"
         backgroundImage={homeBannerImage}
       />
       <AccomodationsList accomodations={accomodations}/>

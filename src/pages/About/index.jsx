@@ -1,12 +1,15 @@
 import Banner from '../../components/Banner';
 import Collapsible from '../../components/Collapsible';
+
 import aboutBannerImage from '../../assets/Images/about-banner.svg';
+import './About.scss'
 
 function About() {
   return (
     <>
       <Banner
         backgroundImage={aboutBannerImage}
+        isAboutPage={true}
       />
       <div>
         <Collapsible
