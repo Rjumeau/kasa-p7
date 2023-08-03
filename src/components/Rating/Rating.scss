@@ -2,12 +2,25 @@
 @import '../../assets/Styles/variables/colors';
 
 .rating-wrapper {
-  @include flex-center;
   margin-bottom: 0.5em;
+  display: flex;
+  gap: 0.4em;
 }
 
 
 .svg-inline--fa.filled-icon, .svg-inline--fa.empty-icon {
   color: $primary-color;
   font-size: 2em;
+}
+
+
+@media screen and (max-width: 768px) {
+  .svg-inline--fa.filled-icon,
+  .svg-inline--fa.empty-icon {
+    font-size: 1em;
+  }
+
+  .rating-wrapper {
+    margin: 0;
+  }
 }

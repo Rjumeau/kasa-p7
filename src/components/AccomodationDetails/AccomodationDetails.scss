@@ -35,3 +35,26 @@
   width: 28%;
   border-radius: 50%;
 }
+
+
+@media screen and (max-width: 768px) {
+  .tag {
+    padding: 0.3em 1em
+  }
+  .details-container {
+    flex-direction: column;
+  }
+
+  .host-details-wrapper {
+    flex-direction: row-reverse;
+    margin-top: 2em;
+  }
+
+  .host-infos {
+    justify-content: flex-end;
+  }
+
+  .host-picture {
+    width: 22%;
+  }
+}

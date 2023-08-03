@@ -16,3 +16,10 @@
       font-size: 2em;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .collapsible-details {
+    flex-direction: column;
+    gap: 2em;
+  }
+}

@@ -4,6 +4,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
+  border-radius: 10px;
 }
 
 .carousel-items {
@@ -18,7 +19,7 @@
   width: 100%;
   overflow: hidden;
   background-position: center;
-  background-size: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -61,4 +62,10 @@
 
 .bullet.active {
   background-color: $primary-color !important
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-items {
+    height: 40vh;
+  }
 }
