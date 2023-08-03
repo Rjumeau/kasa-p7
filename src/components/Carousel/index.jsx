@@ -1,8 +1,9 @@
-import './Carousel.scss'
 import { useState } from 'react';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft} from '@fortawesome/free-solid-svg-icons';
-import { faChevronRight} from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft, faChevronRight} from '@fortawesome/free-solid-svg-icons';
+
+import './Carousel.scss'
 
 
 function Carousel({pictures}) {

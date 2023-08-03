@@ -1,0 +1,18 @@
+.collapsible-details {
+  display: flex;
+  gap: 5em;
+  margin-top: 1.8em;
+
+  .collapsible-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .collapsible-wrapper {
+    padding: 0.5em;
+  }
+
+  .svg-inline--fa {
+      font-size: 2em;
+  }
+}
