@@ -1,0 +1,12 @@
+@import '../../assets/Styles/mixins';
+@import '../../assets/Styles/variables/colors';
+
+.rating-wrapper {
+  @include flex-center;
+}
+
+
+.svg-inline--fa.filled-icon, .svg-inline--fa.empty-icon {
+  color: $primary-color;
+  font-size: 2em;
+}
