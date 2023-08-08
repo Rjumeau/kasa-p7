@@ -22,18 +22,29 @@
 }
 
 .collapsible-content {
+  opacity: 0;
   background-color: $secondary-color;
   padding: 1em;
+  transition: opacity 0.2s ease-in-out;
 
   ul {
     padding-inline: 0 !important;
   }
 }
 
-.svg-inline--fa {
-  color: white;
+.collapsible-content.slowdown {
+  opacity: 1;
 }
 
+.collapsible-arrow {
+  color: white;
+  width: 5%;
+  transition: 0.2s ease-in-out;
+}
+
+.collapsible-arrow.open {
+  transform: rotate(180deg);
+}
 
 @media (max-width: 768px) {
   .collapsible-container {

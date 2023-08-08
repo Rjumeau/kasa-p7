@@ -1,4 +1,6 @@
 import { useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react'
 
 import Carousel from '../../components/Carousel';
 import AccomodationDetails from '../../components/AccomodationDetails';
@@ -11,7 +13,16 @@ import './Accomodation.scss'
 
 function Accomodation() {
   const { accomodationId } = useParams()
-  const selectedAccomodation =  accomodations.find(accomodation => accomodation.id === accomodationId)
+  const navigate = useNavigate();
+
+  const selectedAccomodation = accomodations.find(accomodation => accomodation.id === accomodationId)
+
+  useEffect(() => {
+    if (!selectedAccomodation) {
+      navigate('/*/');
+    }
+  });
+
   return (
     <>
       <Carousel
