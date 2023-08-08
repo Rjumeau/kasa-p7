@@ -42,11 +42,25 @@
   right: 1rem;
 }
 
-.carousel-bullets {
+.carousel-count-wrapper {
   position: absolute;
-  bottom: 10%;
+  bottom: 5%;
   left: 0;
   right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.carousel-count {
+  padding: 0.5em;
+  border-radius: 10px;
+  background-color: $primary-color;
+  color: white;
+}
+
+.carousel-bullets {
   display: flex;
   justify-content: center;
 }
