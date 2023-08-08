@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react'
+import { useNavigate} from 'react-router-dom';
 
 import Carousel from '../../components/Carousel';
 import AccomodationDetails from '../../components/AccomodationDetails';
@@ -14,35 +14,38 @@ import './Accomodation.scss'
 function Accomodation() {
   const { accomodationId } = useParams()
   const navigate = useNavigate();
-
   const selectedAccomodation = accomodations.find(accomodation => accomodation.id === accomodationId)
 
   useEffect(() => {
     if (!selectedAccomodation) {
-      navigate('/*/');
+      navigate('/*')
     }
-  });
+  }, [selectedAccomodation, navigate])
 
-  return (
-    <>
-      <Carousel
-        pictures={selectedAccomodation.pictures}
-      />
-      <AccomodationDetails
-        accomodation={selectedAccomodation}
-      />
-      <section className='collapsible-details' >
-        <Collapsible
-          title="Description"
-          text={selectedAccomodation.description}
+  if (!selectedAccomodation) {
+    return null
+  } else {
+    return (
+      <>
+        <Carousel
+          pictures={selectedAccomodation.pictures}
         />
-        <Collapsible
-          title="Equipements"
-          equipments={selectedAccomodation.equipments}
+        <AccomodationDetails
+          accomodation={selectedAccomodation}
         />
-      </section>
-    </>
-  )
+        <section className='collapsible-details' >
+          <Collapsible
+            title="Description"
+            text={selectedAccomodation.description}
+          />
+          <Collapsible
+            title="Equipements"
+            equipments={selectedAccomodation.equipments}
+          />
+        </section>
+      </>
+    )
+  }
 }
 
 export default Accomodation
