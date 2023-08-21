@@ -12,10 +12,11 @@
 .banner-title {
   color: white;
   font-weight: 500;
-}
 
-.banner.about-mobile {
-  height: 30vh;
+  span {
+    color: white;
+    font-weight: 500;
+  }
 }
 
 
@@ -28,5 +29,9 @@
   .banner-title {
     margin-left: 1em;
     font-size: 1.5em;
+  }
+
+  .split-title {
+    display: block;
   }
 }

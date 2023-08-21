@@ -10,6 +10,7 @@ function Home() {
       <Banner
         title="Chez vous, partout et ailleurs"
         backgroundImage={homeBannerImage}
+        needSplitTitle='true'
       />
       <AccomodationsList accomodations={accomodations}/>
     </div>

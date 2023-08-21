@@ -9,7 +9,7 @@ import Error from './components/Error';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
-function App() {
+function AppRouter() {
   return (
     <Router>
       < div className="container">
@@ -27,4 +27,4 @@ function App() {
   )
 }
 
-export default App;
+export default AppRouter;

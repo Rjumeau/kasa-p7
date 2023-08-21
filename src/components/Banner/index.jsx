@@ -1,47 +1,27 @@
-import React, { useEffect, useState } from 'react';
 import './Banner.scss'
 
-function Banner({title, backgroundImage, isAboutPage}) {
-  const [isMobile, setIsMobile] = useState(false)
-
-  const bannerClassName = isAboutPage && isMobile ? 'banner about-mobile' : 'banner'
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768 )
-    };
-
-    window.addEventListener('resize', handleResize)
-    handleResize();
-
-    return () => {
-      window.removeEventListener('resize', handleResize)
-    };
-  }, []);
-
+function Banner({ title, backgroundImage, needSplitTitle = false }) {
   const backgroundStyle = {
     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${backgroundImage})`
-  }
+  };
 
-  let titleParts = []
-  if (title) {
-    titleParts = title.split(',');
-    titleParts[0] += ','
-  }
+  const splitTitle = needSplitTitle && title.split(',');
 
   return (
-    <div className={bannerClassName} style={backgroundStyle}>
+    <div className='banner' style={backgroundStyle}>
       {title && (
-      <h1 className="banner-title">
-        {titleParts.map((part, index) => (
-          <React.Fragment key={index}>
-            {index > 0 && isMobile ? <br /> : null}
-            {part}
-          </React.Fragment>
-        ))}
-      </h1>)}
+        <h1 className="banner-title">
+          {needSplitTitle ? (
+            <>
+              <span>{splitTitle[0] += ','}</span><span className='split-title'>{splitTitle[1]}</span>
+            </>
+          ) : (
+            title
+          )}
+        </h1>
+      )}
     </div>
-  )
+  );
 }
 
-export default Banner
+export default Banner;

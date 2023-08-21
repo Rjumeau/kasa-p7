@@ -9,7 +9,6 @@ function About() {
     <>
       <Banner
         backgroundImage={aboutBannerImage}
-        isAboutPage={true}
       />
       <div>
         <Collapsible
