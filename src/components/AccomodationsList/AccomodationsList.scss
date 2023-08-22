@@ -61,5 +61,9 @@
 
   .card {
     height: 300px;
+
+    &:hover {
+      transform: none;
+    }
   }
 }
