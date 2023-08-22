@@ -42,7 +42,7 @@ function Carousel({pictures}) {
         <FontAwesomeIcon icon={faChevronLeft} className="carousel-control prev" onClick={handlePrev} />
         <FontAwesomeIcon icon={faChevronRight} className="carousel-control next" onClick={handleNext} />
         <div className="carousel-count-wrapper">
-          <span className='carousel-count'><strong>{activePicture + 1}/{pictures.length}</strong></span>
+          <span className='carousel-count'>{activePicture + 1}/{pictures.length}</span>
       </div>
       </>
       )}

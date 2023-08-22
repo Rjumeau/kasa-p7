@@ -1,6 +1,6 @@
 import './Banner.scss'
 
-function Banner({ title, backgroundImage, needSplitTitle = false }) {
+function Banner({ title, backgroundImage, needSplitTitle = false, isAboutMobile = false }) {
   const backgroundStyle = {
     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${backgroundImage})`
   };
@@ -8,7 +8,7 @@ function Banner({ title, backgroundImage, needSplitTitle = false }) {
   const splitTitle = needSplitTitle && title.split(',');
 
   return (
-    <div className='banner' style={backgroundStyle}>
+    <div className={isAboutMobile ? 'banner about-mobile' : 'banner'} style={backgroundStyle}>
       {title && (
         <h1 className="banner-title">
           {needSplitTitle ? (

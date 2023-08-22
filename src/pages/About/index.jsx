@@ -8,6 +8,7 @@ function About() {
   return (
     <>
       <Banner
+        isAboutMobile='true'
         backgroundImage={aboutBannerImage}
       />
       <div>
