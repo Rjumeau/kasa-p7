@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import Accomodation from './pages/Accomodation';
 import About from './pages/About';
 
-import Error from './components/Error';
+import Error from './pages/Error';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
