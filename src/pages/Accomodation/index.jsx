@@ -6,7 +6,7 @@ import Carousel from '../../components/Carousel';
 import AccomodationDetails from '../../components/AccomodationDetails';
 import Collapsible from '../../components/Collapsible';
 
-import accomodations from '../../data/accomodations.json'
+import accommodationService from '../../services/AccomodationService';
 
 import './Accomodation.scss'
 
@@ -14,7 +14,7 @@ import './Accomodation.scss'
 function Accomodation() {
   const { accomodationId } = useParams()
   const navigate = useNavigate();
-  const selectedAccomodation = accomodations.find(accomodation => accomodation.id === accomodationId)
+  const selectedAccomodation = accommodationService.getOneAccommodation(accomodationId)
 
   useEffect(() => {
     if (!selectedAccomodation) {

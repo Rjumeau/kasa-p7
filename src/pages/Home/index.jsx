@@ -2,9 +2,11 @@ import Banner from '../../components/Banner';
 import AccomodationsList from '../../components/AccomodationsList';
 
 import homeBannerImage from '../../assets/Images/home-banner.svg';
-import accomodations from '../../data/accomodations.json'
+import accommodationService from '../../services/AccomodationService'
 
 function Home() {
+  const accomodations = accommodationService.getAllAccommodations()
+
   return (
     <div>
       <Banner
